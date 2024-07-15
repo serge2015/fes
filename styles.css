@@ -290,6 +290,7 @@ li {
 
 .customers {
     opacity: 0.5;
+    margin-top: 20px;
 }
 
 .customers p {
@@ -615,7 +616,7 @@ h6.monthly {
 footer {
     background-color: rgb(100,21,255);
     margin:0 auto;
-    padding: 40px 100px;
+    padding: 40px 0;
 }
 
 footer .row {
@@ -754,6 +755,10 @@ footer .row {
         text-align: center;
     }
 
+    #landing p {
+        text-align: center;
+    }
+
     nav .row {
         flex-direction: row;
     }
@@ -804,6 +809,10 @@ footer .row {
 
     .left_qw h5 {
         text-align: center;
+    }
+
+    .btn {
+        margin: 8px auto;
     }
 
     .left_qw p {

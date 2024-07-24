@@ -71,7 +71,6 @@ input:hover {
     border-color: #6314ff;
 }
 
-
 .email {
     font-weight: bold;
     font-size: 16px;
@@ -95,6 +94,11 @@ button {
     cursor: pointer;
 }
 
+button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -109,6 +113,7 @@ button {
     display: flex;
     flex-direction: column;
 }
+
 .logo {
     width: 44px;
 }
@@ -548,6 +553,26 @@ h6.monthly {
     color: rgb(246,173,85)
 }
 
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonial {
+    padding: 20px;
+    background-color: #f6f4fa;
+}
+
+#testimonial_1 {
+    top:0;
+    left:0;
+}
+
+#testimonial_2 {
+    display: none;
+}
+
 .testimonials h4 {
     font-size: 20px;
     margin: 12px 0;
@@ -598,13 +623,17 @@ h6.monthly {
 
 .testimonials_btn {
     border-radius: 9999px;
-    background-color: rgb(237 242 247);
+    background-color: white;
     color: rgb(100 21 255);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
     width: 50px;
     height: 50px;  
     border: none;  
+}
+
+.testimonials_btn:hover {
+    transform: scale(1.07);
 }
 
 .divider {
@@ -674,6 +703,53 @@ footer .row {
     width: 100%;
     border-bottom-width: 1px;
     border: 1px solid rgba(247, 250, 252, 0.25);
+}
+
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.faq {
+    background-color: #f6f4fa;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.question__shell {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.question__shell:hover {
+    cursor: pointer;
+}
+
+.question {
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+}
+
+.arrow__btn {
+    border:none;
+    background-color: transparent;
+    color: #6314ff;
+    transition: all 50ms ease;
+}
+
+.answer {
+    padding: 0 20px 20px 20px;
+    display: none;
+    transition: all 300ms ease;
 }
 
 .footer__info {
